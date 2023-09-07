@@ -1,9 +1,10 @@
 package ???;
 
-public class PrimeTester {
+public class PrimeTester implements Runnable{
 
     NumberUnderTest numberUnderTest;
     int highestNumberToTest;
+
 
     public PrimeTester(NumberUnderTest numberUnderTest, int highestNumberToTest) {
         this.numberUnderTest = numberUnderTest;
@@ -20,7 +21,7 @@ public class PrimeTester {
                 break;
             }
 
-//            boolean isPrime = Primes.isPrime(number);
+            boolean isPrime = Primes.isPrime(number);
 
             if (isPrime) {
                 System.out.println(Thread.currentThread().getId() + " found a prime number: " + number);

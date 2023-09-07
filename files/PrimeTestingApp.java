@@ -1,8 +1,8 @@
 package ???;
 
-public class PrimeTestingApp {
+public class PrimeTestingApp
 
-    private static final int HIGHEST_NUMBER_TO_TEST = 300;
+    private static final int HIGHEST_NUMBER_TO_TEST = 2000;
 
     public static void main(String[] args) {
         var app = new PrimeTestingApp();
