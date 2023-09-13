@@ -1,6 +1,6 @@
 import org.apache.commons.math3.primes.Primes;
 
-public class PrimeTester implements Runnable{
+public class PrimeTester extends Thread {
 
     NumberUnderTest numberUnderTest;
     int highestNumberToTest;
@@ -17,7 +17,7 @@ public class PrimeTester implements Runnable{
 
             var number = numberUnderTest.getNumber();
 
-            if (number > highestNumberToTest){
+            if (number > highestNumberToTest) {
                 break;
             }
 
@@ -30,7 +30,7 @@ public class PrimeTester implements Runnable{
     }
 
     @Override
-    public void run() {
-
+    public synchronized void run() {
+        startTesting();
     }
 }

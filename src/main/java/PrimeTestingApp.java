@@ -21,10 +21,12 @@ public class PrimeTestingApp{
             Thread thread3 = new Thread(tester3);
             Thread thread4 = new Thread(tester4);
 
-
+//
             thread1.start();
             thread2.start();
             thread3.start();
             thread4.start();
+
+
         }
 }
